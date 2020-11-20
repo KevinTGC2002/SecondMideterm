@@ -3,17 +3,6 @@
 </a>
 
 <div class="grid-x grid-margin-x">
-
-	<!-- <div class="medium-6 large-3 cell">
-    <button type="button"
-      class="button primary"
-      [attr.aria-expanded]="!isOffcanvas"
-      aria-controls="offCanvasMenuLeft"
-      (click)="offcanvasLeft.show()">
-      Toggle Off Canvas Left
-    </button>
-  </div> -->
-
 	<div class="medium-6 large-3 cell">
 		<button type="button"
 
@@ -25,46 +14,7 @@
       Menu
     </button>
 	</div>
-
-	<!-- <div class="medium-6 large-3 cell">
-    <button type="button"
-      class="button primary"
-      [attr.aria-expanded]="!isOffcanvas"
-      aria-controls="offCanvasMenuTop"
-      (click)="offcanvasTop.show()">
-      Toggle Off Canvas Top
-    </button>
-  </div>
-  <div class="medium-6 large-3 cell">
-    <button type="button"
-      class="button secondary"
-      [attr.aria-expanded]="!isOffcanvas"
-      aria-controls="offCanvasMenuBottom"
-      (click)="offcanvasBottom.show()">
-      Toggle Off Canvas Bottom
-    </button>
-  </div> -->
-</div><!-- /grid -->
-
-<!-- Position Left 
-<div [offcanvas]="isOffcanvas"
-  class="off-canvas position-left"
-  id="offCanvasMenuLeft"
-  aria-hidden="true"
-  #offcanvasLeft="bs-offcanvas">
-  <h4>Off Canvas Left</h4>
-  <ul class="menu vertical">
-    <li routerLinkActive="active"
-    [routerLinkActiveOptions]="{ exact: true }">
-      <a routerLink="/components/callouts" (click)="offcanvasLeft.hide()">Callouts</a>
-    </li>
-  </ul>
-  <button class="close-button" aria-label="Close Menu" aria-controls="offCanvasMenu" type="button" (click)="offcanvasLeft.hide()">
-    <span aria-hidden="true">×</span>
-  </button>
-</div> -->
-
-<!-- Position Right -->
+</div>
 <div [offcanvas]="isOffcanvas" class="off-canvas position-right" id="offCanvasMenuRight" aria-hidden="true"
 	#offcanvasRight="bs-offcanvas">
 	<h4>Kevin Aucancela</h4>
