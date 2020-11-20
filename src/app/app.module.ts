@@ -8,13 +8,13 @@ import { LightboxModule } from "ngx-lightbox";
 
 import {
   AccordionModule,
-  AlertModule, // Foundation Callouts
+  AlertModule,
   ButtonsModule,
-  CarouselModule, // Foundation Orbit
+  CarouselModule,
   CollapseModule,
   BsDatepickerModule,
-  BsDropdownModule, // Foundation Dropdown Menus and Dropdown Panes
-  ModalModule, // Foundation Reveal
+  BsDropdownModule,
+  ModalModule,
   OffcanvasModule,
   PaginationModule,
   ProgressbarModule,
@@ -25,7 +25,6 @@ import {
   TooltipModule,
   TypeaheadModule
 } from "ngx-foundation";
-
 import { AppComponent } from "./app.component";
 import { TopBarComponent } from "./top-bar/top-bar.component";
 import { ProductListComponent } from "./product-list/product-list.component";
@@ -34,14 +33,8 @@ import { ProductDetailsComponent } from "./product-details/product-details.compo
 import { CartService } from "./cart.service";
 import { CartComponent } from "./cart/cart.component";
 import { ShippingComponent } from "./shipping/shipping.component";
-import { FngAccordionComponent } from "./fng-accordion/fng-accordion.component";
 import { GraphicDesignComponent } from "./graphic-design/graphic-design.component";
 import { PortfolioLightboxComponent } from "./portfolio-lightbox/portfolio-lightbox.component";
-import { MyResumeComponent } from "./my-resume/my-resume.component";
-import { ResumeEducationComponent } from "./my-resume/resume-education/resume-education.component";
-import { ResumeFooterComponent } from "./my-resume/resume-footer/resume-footer.component";
-import { ResumeProfileComponent } from "./my-resume/resume-profile/resume-profile.component";
-import { ResumeWorkExperienceComponent } from "./my-resume/resume-work-experience/resume-work-experience.component";
 
 @NgModule({
   imports: [
@@ -58,8 +51,7 @@ import { ResumeWorkExperienceComponent } from "./my-resume/resume-work-experienc
       { path: "products/:productId", component: ProductDetailsComponent },
       { path: "cart", component: CartComponent },
       { path: "shipping", component: ShippingComponent },
-      { path: "graphic", component: GraphicDesignComponent },
-      { path: "resume", component: MyResumeComponent }
+      { path: "graphic", component: GraphicDesignComponent }
     ])
   ],
   declarations: [
@@ -70,14 +62,8 @@ import { ResumeWorkExperienceComponent } from "./my-resume/resume-work-experienc
     ProductDetailsComponent,
     CartComponent,
     ShippingComponent,
-    FngAccordionComponent,
     GraphicDesignComponent,
-    PortfolioLightboxComponent,
-    MyResumeComponent,
-    ResumeEducationComponent,
-    ResumeFooterComponent,
-    ResumeProfileComponent,
-    ResumeWorkExperienceComponent
+    PortfolioLightboxComponent
   ],
   bootstrap: [AppComponent],
   providers: [CartService]

@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Input } from '@angular/core';
-
 import { Lightbox } from 'ngx-lightbox';
-
 import { CartService } from '../cart.service';
 
 @Component({
